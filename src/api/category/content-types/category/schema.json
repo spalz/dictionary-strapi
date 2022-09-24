@@ -4,7 +4,8 @@
   "info": {
     "singularName": "category",
     "pluralName": "categories",
-    "displayName": "categories"
+    "displayName": "categories",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -13,15 +14,6 @@
   "attributes": {
     "name": {
       "type": "string"
-    },
-    "index": {
-      "type": "uid"
-    },
-    "word": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::word.word",
-      "inversedBy": "categories"
     }
   }
 }

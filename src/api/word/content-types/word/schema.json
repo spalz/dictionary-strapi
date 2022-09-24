@@ -21,12 +21,6 @@
     "example": {
       "type": "text"
     },
-    "categories": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::category.category",
-      "mappedBy": "word"
-    },
     "tags": {
       "type": "relation",
       "relation": "oneToMany",
