@@ -56,8 +56,6 @@ Icon
 *.sql
 *.sqlite
 *.sqlite3
-yarn.lock
-
 
 ############################
 # Misc.
