@@ -27,9 +27,9 @@
       "target": "api::tag.tag",
       "inversedBy": "words"
     },
-    "categories": {
+    "category": {
       "type": "relation",
-      "relation": "manyToMany",
+      "relation": "manyToOne",
       "target": "api::category.category",
       "inversedBy": "words"
     }

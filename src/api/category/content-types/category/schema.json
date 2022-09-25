@@ -17,9 +17,9 @@
     },
     "words": {
       "type": "relation",
-      "relation": "manyToMany",
+      "relation": "oneToMany",
       "target": "api::word.word",
-      "inversedBy": "categories"
+      "mappedBy": "category"
     }
   }
 }
