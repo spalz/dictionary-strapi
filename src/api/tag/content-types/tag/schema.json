@@ -14,6 +14,12 @@
   "attributes": {
     "name": {
       "type": "string"
+    },
+    "words": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::word.word",
+      "mappedBy": "tags"
     }
   }
 }
