@@ -22,7 +22,7 @@
       "target": "api::word.word",
       "mappedBy": "category"
     },
-    "owner": {
+    "author": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "plugin::users-permissions.user",

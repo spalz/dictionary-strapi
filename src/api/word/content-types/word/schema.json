@@ -37,7 +37,7 @@
       "target": "api::category.category",
       "inversedBy": "words"
     },
-    "owner": {
+    "author": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "plugin::users-permissions.user",

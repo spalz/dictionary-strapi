@@ -1,9 +1,21 @@
-'use strict';
+"use strict";
 
 /**
  * category router
  */
 
-const { createCoreRouter } = require('@strapi/strapi').factories;
+const { createCoreRouter } = require("@strapi/strapi").factories;
 
-module.exports = createCoreRouter('api::category.category');
+module.exports = createCoreRouter("api::category.category", {
+  config: {
+    create: {
+      middlewares: ["global::assign-owner"],
+    },
+    update: {
+      policies: ["global::is-owner"],
+    },
+    delete: {
+      policies: ["global::is-owner"],
+    },
+  },
+});

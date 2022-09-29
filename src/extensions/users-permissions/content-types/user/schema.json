@@ -78,19 +78,19 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::category.category",
-      "mappedBy": "owner"
+      "mappedBy": "author"
     },
     "tags": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::tag.tag",
-      "mappedBy": "owner"
+      "mappedBy": "author"
     },
     "words": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::word.word",
-      "mappedBy": "owner"
+      "mappedBy": "author"
     }
   }
 }

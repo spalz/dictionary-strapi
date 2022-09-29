@@ -15,7 +15,7 @@ module.exports = createCoreController("api::category.category", {
       category.data.id,
       {
         data: {
-          owner: user.id,
+          author: user.id,
         },
       }
     );
@@ -27,42 +27,9 @@ module.exports = createCoreController("api::category.category", {
 
     ctx.query.filters = {
       ...(ctx.query.filters || {}),
-      owner: user.id,
+      author: user.id,
     };
 
     return super.find(ctx);
-  },
-
-  async findOne(ctx) {
-    const user = ctx.state.user;
-
-    ctx.query.filters = {
-      ...(ctx.query.filters || {}),
-      owner: user.id,
-    };
-
-    return super.findOne(ctx);
-  },
-
-  async update(ctx) {
-    const user = ctx.state.user;
-
-    ctx.query.filters = {
-      ...(ctx.query.filters || {}),
-      owner: user.id,
-    };
-
-    return super.update(ctx);
-  },
-
-  async delete(ctx) {
-    const user = ctx.state.user;
-
-    ctx.query.filters = {
-      ...(ctx.query.filters || {}),
-      owner: user.id,
-    };
-
-    return super.delete(ctx);
   },
 });
