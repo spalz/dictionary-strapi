@@ -73,6 +73,24 @@
         "c1: (C1) – продвинутый",
         "c2: (C2) – профессиональный уровень владения"
       ]
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::category.category",
+      "mappedBy": "owner"
+    },
+    "tags": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::tag.tag",
+      "mappedBy": "owner"
+    },
+    "words": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::word.word",
+      "mappedBy": "owner"
     }
   }
 }

@@ -22,10 +22,11 @@
       "target": "api::word.word",
       "mappedBy": "tags"
     },
-    "user": {
+    "owner": {
       "type": "relation",
-      "relation": "oneToOne",
-      "target": "plugin::users-permissions.user"
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "tags"
     }
   }
 }
