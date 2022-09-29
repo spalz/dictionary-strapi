@@ -13,7 +13,8 @@
   "pluginOptions": {},
   "attributes": {
     "word": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "translation": {
       "type": "string"
@@ -27,14 +28,19 @@
       "target": "api::tag.tag",
       "inversedBy": "words"
     },
+    "example_traslation": {
+      "type": "string"
+    },
     "category": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::category.category",
       "inversedBy": "words"
     },
-    "example_traslation": {
-      "type": "string"
+    "user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
     }
   }
 }
