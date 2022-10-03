@@ -1,7 +1,7 @@
 module.exports = ({ env }) => ({
   host: env("HOST", "0.0.0.0"),
   port: env.int("PORT", 1337),
-  url: "https://admin.dictionary.dangercactus.io",
+  url: env.int("URL"),
   proxy: true,
   app: {
     keys: env.array("APP_KEYS"),
