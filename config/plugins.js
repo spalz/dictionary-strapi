@@ -18,4 +18,20 @@ module.exports = ({ env }) => ({
     },
   },
   "duplicate-button": true,
+
+  email: {
+    config: {
+      provider: "strapi-provider-email-mailjet",
+      providerOptions: {
+        publicApiKey: env("MAILJET_PUBLIC_KEY"),
+        secretApiKey: env("MAILJET_SECRET_KEY"),
+      },
+      settings: {
+        defaultFrom: "email@noreply.dangercactus.io",
+        defaultFromName: "Dictionary english",
+        defaultTo: "spals@protonmail.com",
+        defaultToName: "Andrey Petrov",
+      },
+    },
+  },
 });
