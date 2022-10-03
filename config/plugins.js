@@ -27,8 +27,8 @@ module.exports = ({ env }) => ({
         secretApiKey: env("MAILJET_SECRET_KEY"),
       },
       settings: {
-        defaultFrom: "email@noreply.dangercactus.io",
-        defaultFromName: "Dictionary english",
+        defaultFrom: "noreply@lexicon.life",
+        defaultFromName: "Lexicon life",
         defaultTo: "spals@protonmail.com",
         defaultToName: "Andrey Petrov",
       },
